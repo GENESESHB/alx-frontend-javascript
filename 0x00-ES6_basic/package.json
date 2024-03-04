@@ -1,0 +1,19 @@
+{
+  "name": "0x00-ES6_basic",
+  "version": "1.0.0",
+  "description": "first task to nodejs",
+  "main": "0-main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "hassan Boudraa",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-jest": "^27.4.3",
+    "eslint": "7.32.0",
+    "jest": "^27.4.3"
+  }
+}
+
