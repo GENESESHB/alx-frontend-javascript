@@ -53,3 +53,25 @@ Now, let's go through each line:
 In summary, this code defines a function that returns a promise, simulating an asynchronous operation (like an API call) that resolves after a specified delay. Adjust the `resolve` part to match the actual response logic in your application.
 
 
+// 1-promise.js
+
+// Define a function named getFullResponseFromAPI that takes a boolean parameter 'success'
+function getFullResponseFromAPI(success) {
+  // Create and return a new Promise using the Promise constructor
+  return new Promise((resolve, reject) => {
+    // Check the value of the 'success' parameter
+    if (success) {
+      // If 'success' is true, resolve the promise with a success object
+      resolve({ status: 200, body: 'Success' });
+    } else {
+      // If 'success' is false, reject the promise with an error object
+      reject(new Error('The fake API is not working currently'));
+    }
+  });
+}
+
+// Export the getFullResponseFromAPI function as the default export of this module
+export default getFullResponseFromAPI;
+
+
+
