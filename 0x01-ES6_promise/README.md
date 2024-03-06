@@ -53,6 +53,7 @@ Now, let's go through each line:
 In summary, this code defines a function that returns a promise, simulating an asynchronous operation (like an API call) that resolves after a specified delay. Adjust the `resolve` part to match the actual response logic in your application.
 
 
+```javascript
 // 1-promise.js
 
 // Define a function named getFullResponseFromAPI that takes a boolean parameter 'success'
